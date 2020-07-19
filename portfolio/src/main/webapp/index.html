@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+   <div><p><span style="font-size:60px;" data-mce-style="letter-spacing: -0.0555556rem;"> &emsp;Hi, I'm Jigyasa! <br>  &emsp;A computer science engineering undergrad </span></p></div>
+   <br>
+  
+   &emsp;
+   &emsp;
+   &emsp;
+  
+   <a href="https://www.linkedin.com/in/jigyasa-k-454204135/">
+   <img src="/images/linkedin.png" alt="Linkedin" style="width:50px;height:50px;">
+   </a>
+   &emsp;
+   <a href="https://github.com/jigyasak05">
+   <img src="/images/github.png" alt="Github" style="width:50px;height:50px;">
+   </a>
+   &emsp;
+    <a href="mailto:jigyasakhaneja05@gmail.com">
+   <img src="/images/gmail.png" alt="mail" style="width:50px;height:50px;">
+   </a>
+   &emsp;
+   &emsp;
+   &emsp;
+  
+ <div><p><span style="font-size:30px;" data-mce-style="letter-spacing: -0.0555556rem;"> &emsp;&emsp;Things I like:</span></p></div>
+</body>
+  &emsp;
+   
+  
+   
+<div class="row">
+  <div class="column">
+    <img src="/images/music.jpg" alt="Snow" style="width:100%">
+    <div class="bottom-left"><b>Music</b></div>
+  </div>
+  <div class="column">
+    <img src="/images/travelling.jpg" alt="Forest" style="width:100%">
+    <div class="bottom-left"><b>Travelling</b></div>
+  </div>
+  <div class="column">
+    <img src="/images/candy.jpg" alt="food" style="width:100%">
+    <div class="bottom-left"><b>Food</b></div>
+  </div>
+</div>
+
+
 </html>
