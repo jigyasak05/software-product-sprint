@@ -1,9 +1,25 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
 }
 
-#greeting-container {
-  margin-top: 20px;
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+
+.column {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  color:#000000;
+  font-size: 2.5em;
+  bottom: 8px;
+  left: 16px;
 }
