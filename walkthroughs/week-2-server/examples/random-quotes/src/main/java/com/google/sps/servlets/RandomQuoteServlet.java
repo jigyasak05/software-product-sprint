@@ -23,14 +23,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Servlet that returns a random quote. */
-@WebServlet("/random-quote")
+@WebServlet("/hello-message")
 public final class RandomQuoteServlet extends HttpServlet {
 
-  private List<String> quotes;
+ // private List<String> quotes;
 
   @Override
   public void init() {
-    quotes = new ArrayList<>();
+  /*  quotes = new ArrayList<>();
     quotes.add(
         "A ship in port is safe, but that is not what ships are for. "
             + "Sail out to sea and do new things. - Grace Hopper");
@@ -45,14 +45,15 @@ public final class RandomQuoteServlet extends HttpServlet {
     quotes.add(
         "Sometimes it is the people no one can imagine anything of "
             + "who do the things no one can imagine. - Alan Turing");
-    quotes.add("Those who can imagine anything, can create the impossible. - Alan Turing");
+    quotes.add("Those who can imagine anything, can create the impossible. - Alan Turing"); */
   }
+  
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    String quote = quotes.get((int) (Math.random() * quotes.size()));
+    //String quote = quotes.get((int) (Math.random() * quotes.size()));
 
     response.setContentType("text/html;");
-    response.getWriter().println(quote);
+    response.getWriter().println("Hola! Nice to e-meet you! I learnt about using fetch() to request content from the server! Yay;");
   }
 }
